@@ -1,10 +1,10 @@
-Feature: Fight or flight
-  In order to increase the ninja survival rate,
-  As a ninja commander
-  I want my ninjas to decide whether to take on an
-  opponent based on their skill levels
+Feature: age in days
+  Read an integer value corresponding to a person's age (in days) and print it in years, months and days, followed by its respective message “ano(s)”, “mes(es)”, “dia(s)”.
 
-  Scenario: Weaker opponent
-    Given we have behave installed
-     When we implement a test
-     Then behave will test it for us!
+  Scenario Outline: Extract years, months, and days from days
+    Given the person is <dayIn> days old
+    When we calculate the date
+    Then the result is <years> years <months> months <days> days
+	Examples:
+	| dayIn | years | months | days |
+	|  400  | 	1 	|  	1    |	 5	|
