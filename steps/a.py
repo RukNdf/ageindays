@@ -11,8 +11,6 @@ def printF(date):
     print(str(year) + ' ano(s)')
     print(str(month) + ' mes(es)')
     print(str(day) + ' dia(s)')
-    
-    
         
 if __name__ == '__main__':
     age_in_days = int(input(""))
