@@ -7,4 +7,6 @@ Feature: age in days
     Then the result is <years> years <months> months <days> days
 	Examples:
 	| dayIn | years | months | days |
-	|  400  | 	1 	|  	1    |	 5	|
+	|  400  | 	1 	|  	1    |	 5	| 
+	|  800  |    2     |      2      |   10    |
+	|   30  |     0     |      1      |   0      |
